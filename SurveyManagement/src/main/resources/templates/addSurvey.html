@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Survey</title>
+  </head>
+  <body>
+    <form onclick="return validate()">
+      <center>
+        <div id="d1">
+          <label for="surveyname">Survey Name :</label>
+          <input type="text" id="surveyname" placeholder="type survey name" />
+          <p id="p1" style="color: red"></p>
+        </div>
+        <br />
+        <br />
+        <div id="d2">
+          <label for="surveytype">
+            Survey Type :<select name="surveytype" id="surveytype">
+              <option value="optional">Optional</option>
+              <option value="mandatory">Mandatory</option>
+            </select>
+          </label>
+          <p id="2"></p>
+        </div>
+        <br />
+        <br />
+        <div id="d3">
+          <label for="startdate">Start Date :</label>
+          <input type="date" id="startdate" />
+          <p id="p3"></p>
+        </div>
+        <br />
+        <br />
+        <div id="d4">
+          <label for="enddate">End Date :</label>
+          <input type="date" id="enddate" />
+          <p id="p4"></p>
+        </div>
+      </center>
+      <br />
+      <br />
+      <div id="d5">
+        <label for="description">Description :</label>
+        <input type="text" id="description" />
+        <p id="p5"></p>
+      </div>
+      <br />
+      <br />
+
+      <div id="d7">
+        <label for="q1">1)What is your name?</label>
+        <input type="text" id="q1" />
+      </div>
+      <br />
+      <br />
+
+      <div id="d8">
+        <label for="q2">2)What is your company name?</label>
+        <input type="text" id="q2" />
+      </div>
+      <br />
+      <br />
+
+      <div id="d9">
+        <label for="q3">3)What is contact number?</label>
+        <input type="text" id="q3" />
+      </div>
+      <br />
+      <br />
+
+      <div id="d10">
+        <label for="q4"
+          >4)Are you currently awaiting results of a COVID-19 test as a result
+          of being symptomatic, being a close contact, or any other reason aside
+          from a preemptive COVID-19 test where you have no reason to believe
+          you have no reason to believe you have COVID-19?</label
+        >
+        <br />
+        <input type="checkbox" name="posibilities" value="yes" />Yes<br />
+        <input type="checkbox" name="posibilities" value="no" />No <br />
+        <input type="checkbox" name="posibilities" value="maybe" />Maybe
+        <br />
+        <input type="checkbox" name="posibilities" value="notverysure" />Not
+        very sure
+      </div>
+      <br />
+      <br />
+
+      <div id="d11">
+        <label for="q5"
+          >5)Have you been in close contact(i.e., within 6 feet for a cumulative
+          total of at least 15 minutes or more over a 24-hour period) in the
+          past 10 days with anyone who you know has tested positive for
+          COVID-19?</label
+        >
+        <br />
+        <input type="checkbox" name="posibilities" value="yes" />Yes<br />
+        <input type="checkbox" name="posibilities" value="no" />No <br />
+        <input type="checkbox" name="posibilities" value="maybe" />Maybe
+        <br />
+        <input type="checkbox" name="posibilities" value="notverysure" />Not
+        very sure
+      </div>
+      <br />
+      <br />
+
+      <div id="d12">
+        <label for="q6"
+          >6)Have you been tested positive for COVID-19 in the last 10
+          days?</label
+        >
+        <br />
+        <input type="checkbox" name="posibilities" value="yes" />Yes<br />
+        <input type="checkbox" name="posibilities" value="no" />No
+      </div>
+      <br />
+      <br />
+
+      <div id="d13">
+        <label for="q7"
+          >7)Have you experienced any of the following symptoms of COVID-19 in
+          the past 7 days: fever or chills, cough, shortness of breath or
+          difficulty breathing,fatigue, muscle or body aches, headache, new loss
+          of taste or smell, sore throat, congestion or runny nose, nausea or
+          vomiting, or diarrhea?</label
+        >
+        <br />
+        <input type="checkbox" name="posibilities" value="yes" />Yes<br />
+        <input type="checkbox" name="posibilities" value="no" />No
+      </div>
+      <br />
+      <br />
+
+      <div id="d14">
+        <label for="q8"
+          >8)Are you considered fully vaccinated against COVID-19?</label
+        >
+        <br />
+        <input type="checkbox" name="posibilities" value="yes" />Yes<br />
+        <input type="checkbox" name="posibilities" value="no" />No
+      </div>
+      <br />
+      <br />
+
+      <center>
+        <div id="d15">
+          <button>
+            <a href="index.html"> Submit </a>
+          </button>
+        </div>
+        &nbsp;&nbsp;&nbsp;
+      </center>
+    </form>
+
+    <script src="validation.js"></script>
+  </body>
+</html>

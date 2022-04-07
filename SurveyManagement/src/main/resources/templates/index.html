@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Management</title>
+  </head>
+  <body>
+    <center>
+      <h1>Survey Management</h1>
+      <br />
+      <br />
+      <button><a href="addSurvey.html">Add New Survey </a></button>
+    </center>
+
+    <br /><br />
+
+    <center>
+      <table border="1" cellpadding="10">
+        <thead>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Start date</th>
+          <th>End date</th>
+          <th>Action</th>
+        </thead>
+        <tbody>
+          <tr th:each="survey : ${listSurveys}">
+            <td th:text="${survey.name}">Name</td>
+            <td th:text="${survey.Type}">Type</td>
+            <td th:text="${survey.startdate}">Start date</td>
+            <td th:text="${survey.enddate}">End date</td>
+            <td>
+              <a th:href="@{'/edit/' + ${survey.id}}">Edit</a>
+              &nbsp;&nbsp;&nbsp;
+              <a th:href="@{'/delete/' + ${survey.id}}">Delete</a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="viewSurvey.html">View/Preview</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+  </body>
+</html>
